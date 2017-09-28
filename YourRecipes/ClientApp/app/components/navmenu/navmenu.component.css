@@ -1,0 +1,7 @@
+.nav-header {
+    text-align: center;
+}
+    .nav-header a {
+        color: inherit;
+        text-decoration: none;
+    }

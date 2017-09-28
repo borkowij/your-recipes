@@ -1,0 +1,14 @@
+<md-sidenav-container>
+    <md-sidenav #sidenav>
+        <nav-menu (onSelected)="sidenav.close()"></nav-menu>
+    </md-sidenav>
+    <md-toolbar color="primary" >
+        <button class="toolbar-button" md-icon-button (click)="sidenav.open()">
+            <md-icon>menu</md-icon>
+        </button>
+        <span>{{currentPageTitle.value}}</span>
+    </md-toolbar>
+    <div class="main-content">
+        <router-outlet></router-outlet>
+    </div>
+</md-sidenav-container>
