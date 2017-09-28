@@ -1,22 +1,25 @@
 <div class='main-nav'>
-    <h2 class="nav-header">
-        <a [routerLink]="['/home']" (click)="onSelect()">Your recipes</a>
-    </h2>
-    <ul class='nav navbar-nav'>
-        <li>
-            <a [routerLink]="['/home']" (click)="onSelect()">
+    <md-toolbar color="accent" class="nav-header">
+        <a [routerLink]="['/home']" (click)="onSelect()" tabindex="-1">Your recipes</a>
+    </md-toolbar>
+    <profile-card></profile-card>
+    <hr />
+    <div class="nav-line-separator"></div>
+    <md-list>
+        <md-list-item>
+            <a [routerLink]="['/home']" (click)="onSelect()" tabindex="-1">
                 Home
             </a>
-        </li>
-        <li>
-            <a [routerLink]="['/counter']" (click)="onSelect()">
+        </md-list-item>
+        <md-list-item>
+            <a [routerLink]="['/counter']" (click)="onSelect()" tabindex="-1">
                 Counter
             </a>
-        </li>
-        <li>
-            <a [routerLink]="['/fetch-data']" (click)="onSelect()">
+        </md-list-item>
+        <md-list-item>
+            <a [routerLink]="['/fetch-data']" (click)="onSelect()" tabindex="-1">
                 Fetch data
             </a>
-        </li>
-    </ul>
+        </md-list-item>
+    </md-list>
 </div>

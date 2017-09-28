@@ -11,6 +11,6 @@ export class AppComponent {
     currentPageTitle: any;
     constructor(private _configService: ConfigService) { }
     ngOnInit() {
-        this.currentPageTitle = this._configService.pageTitle;
+        this.currentPageTitle = this._configService.getPageTitle();
     };
 }

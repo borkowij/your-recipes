@@ -1,0 +1,18 @@
+﻿
+md-card {
+    border-radius: 50%;
+    width: 10em;
+    margin: 1em;
+}
+
+    md-card .cardTitle {
+        margin-bottom: 0.25em;
+    }
+
+    md-card .cardSubtitle {
+        margin-bottom: 1em;
+    }
+
+    md-card .cardImage {
+        padding: 0.5em;
+    }

@@ -8,6 +8,6 @@ import { ConfigService } from '../../services/config.service';
 export class HomeComponent {
     constructor(private _configService: ConfigService) { }
     ngOnInit() {
-        this._configService.pageTitle.value = "Home";
+        this._configService.setPageTitle("Home");
     };
 }

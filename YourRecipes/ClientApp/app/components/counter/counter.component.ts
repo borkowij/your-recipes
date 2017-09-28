@@ -8,7 +8,7 @@ import { ConfigService } from '../../services/config.service';
 export class CounterComponent {
     constructor(private _configService: ConfigService) { }
     ngOnInit() {
-        this._configService.pageTitle.value = "Counter";
+        this._configService.setPageTitle("Counter");
     };
 
     public currentCount = 0;

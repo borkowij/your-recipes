@@ -3,13 +3,14 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
-import { MdSidenavModule, MdToolbarModule, MdIconModule, MdButtonModule } from '@angular/material';
+import { MdSidenavModule, MdToolbarModule, MdIconModule, MdButtonModule, MdCardModule, MdListModule } from '@angular/material';
 
 import { AppComponent } from './components/app/app.component';
 import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
+import { ProfileCardComponent } from './components/profilecard/profilecard.component';
 import { ConfigService } from './services/config.service';
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ConfigService } from './services/config.service';
         NavMenuComponent,
         CounterComponent,
         FetchDataComponent,
-        HomeComponent
+        HomeComponent,
+        ProfileCardComponent
     ],
     imports: [
         CommonModule,
@@ -29,6 +31,8 @@ import { ConfigService } from './services/config.service';
         MdToolbarModule,
         MdIconModule,
         MdButtonModule,
+        MdCardModule,
+        MdListModule,
         RouterModule.forRoot([
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent},

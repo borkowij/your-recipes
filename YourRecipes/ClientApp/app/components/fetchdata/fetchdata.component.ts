@@ -8,7 +8,7 @@ import { ConfigService } from '../../services/config.service';
 })
 export class FetchDataComponent {
     public forecasts: WeatherForecast[];
-    
+
     constructor(http: Http, @Inject('BASE_URL') baseUrl: string, private _configService: ConfigService) {
         http.get(baseUrl + 'api/SampleData/WeatherForecasts').subscribe(result => {
             this.forecasts = result.json() as WeatherForecast[];
@@ -16,7 +16,7 @@ export class FetchDataComponent {
     }
 
     ngOnInit() {
-        this._configService.pageTitle.value = "Fetching data";
+        this._configService.setPageTitle("Fetching data");
     };
 }
 
